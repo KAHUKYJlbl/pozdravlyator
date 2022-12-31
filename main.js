@@ -51,7 +51,7 @@ copyButton.addEventListener('click', () => {
   const inputValue = `С новым годом ${first} Я желаю ${second} И пусть ${third}`;
     navigator.clipboard.writeText(inputValue)
       .then(() => {
-        alert(`скопировано поздравление: С новым годом ${first} Я желаю ${second} И пусть ${third}`);
+        alert(`скопировано поздравление:\nС новым годом ${first} Я желаю ${second} И пусть ${third}`);
       })
       .catch((err) => {
         console.log('Something went wrong', err);
